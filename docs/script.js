@@ -54,13 +54,13 @@ noBtn.addEventListener("mouseover", () => {
   count++;
 
   const x = Math.random() * 400 - 100;
-  const y = Math.random() * 350 - 75;
+  const y = Math.random() * 250 - 75;
 
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
 
   // 🧠 Increase blur gradually
   if (blurLevel < MAX_BLUR) {
-    blurLevel += 0.4; // control speed of blur
+    blurLevel += 0.2; // control speed of blur
   }
 
   noBtn.style.filter = `blur(${blurLevel}px)`;
