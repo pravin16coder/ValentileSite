@@ -41,10 +41,14 @@ button {
 }
 
 #noBtn {
-  background: #ddd;
   position: absolute;
-  right: 0;
+  filter: blur(0px);          /* start clean */
+  opacity: 0.85;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
 }
+
 
 #message {
   margin-top: 20px;
