@@ -48,6 +48,40 @@ noBtn.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
+noBtn.addEventListener("mouseover", moveNo);
+noBtn.addEventListener("touchstart", moveNo);
+
+function moveNo() {
+  // message loop
+  message.textContent = funnyMessages[count % funnyMessages.length];
+  count++;
+
+  const container = document.querySelector(".buttons");
+
+  const containerRect = container.getBoundingClientRect();
+  const btnRect = noBtn.getBoundingClientRect();
+
+  // Mobile-safe movement bounds
+  const maxX = containerRect.width - btnRect.width;
+  const maxY = containerRect.height - btnRect.height;
+
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
+
+  message.style.left = `${x}px`;
+  message.style.top = `${y - 30}px`;
+
+  // gradual blur
+  if (blurLevel < MAX_BLUR) {
+    blurLevel += 0.2;
+  }
+
+  noBtn.style.filter = `blur(${blurLevel}px)`;
+}
+
 // 🏃 Move NO button + show funny messages (infinite loop)
 noBtn.addEventListener("mouseover", () => {
   message.textContent = funnyMessages[count % funnyMessages.length];

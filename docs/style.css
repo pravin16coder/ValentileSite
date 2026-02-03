@@ -24,8 +24,10 @@ h1 {
 
 .buttons {
   position: relative;
-  height: 120px;
+  height: 160px;   /* mobile-friendly */
+  margin-top: 20px;
 }
+
 
 button {
   padding: 12px 22px;
@@ -42,12 +44,22 @@ button {
 
 #noBtn {
   position: absolute;
-  filter: blur(0px);          /* start clean */
-  opacity: 0.85;
+  background: #f2f2f2;        /* softer than grey */
+  color: #555;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-size: 16px;
+
+  filter: blur(0px);
+  opacity: 0.9;
+
   transition:
     transform 0.25s ease,
-    filter 0.25s ease;
+    filter 0.25s ease,
+    opacity 0.25s ease;
 }
+
 
 
 #message {
