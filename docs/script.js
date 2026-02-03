@@ -52,29 +52,46 @@ noBtn.addEventListener("mouseover", moveNo);
 noBtn.addEventListener("touchstart", moveNo);
 
 function moveNo() {
-  // message loop
+  // 1️⃣ Loop message
   message.textContent = funnyMessages[count % funnyMessages.length];
   count++;
 
   const container = document.querySelector(".buttons");
 
-  const containerRect = container.getBoundingClientRect();
-  const btnRect = noBtn.getBoundingClientRect();
+  // Container size (RELATIVE, not viewport)
+  const containerWidth = container.clientWidth;
+  const containerHeight = container.clientHeight;
 
-  // Mobile-safe movement bounds
-  const maxX = containerRect.width - btnRect.width;
-  const maxY = containerRect.height - btnRect.height;
+  // Button size (layout size, blur doesn't affect this)
+  const btnWidth = noBtn.offsetWidth;
+  const btnHeight = noBtn.offsetHeight;
 
-  const x = Math.random() * maxX;
-  const y = Math.random() * maxY;
+  // Message size
+  const msgHeight = message.offsetHeight || 20;
 
+  // 2️⃣ Safe padding (prevents edge sticking)
+  const PADDING = 8;
+
+  // 3️⃣ Max allowed positions (hard clamp)
+  const maxX = containerWidth - btnWidth - PADDING;
+  const maxY = containerHeight - btnHeight - msgHeight - PADDING;
+
+  // 4️⃣ Generate position
+  let x = Math.random() * maxX;
+  let y = Math.random() * maxY;
+
+  // 5️⃣ Clamp (ABSOLUTE SAFETY)
+  x = Math.max(PADDING, Math.min(x, maxX));
+  y = Math.max(msgHeight + PADDING, Math.min(y, maxY));
+
+  // 6️⃣ Apply position
   noBtn.style.left = `${x}px`;
   noBtn.style.top = `${y}px`;
 
   message.style.left = `${x}px`;
-  message.style.top = `${y - 30}px`;
+  message.style.top = `${y - msgHeight}px`;
 
-  // gradual blur
+  // 7️⃣ Gradual blur
   if (blurLevel < MAX_BLUR) {
     blurLevel += 0.2;
   }
@@ -82,7 +99,7 @@ function moveNo() {
   noBtn.style.filter = `blur(${blurLevel}px)`;
 }
 
-// 🏃 Move NO button + show funny messages (infinite loop)
+/*// 🏃 Move NO button + show funny messages (infinite loop)
 noBtn.addEventListener("mouseover", () => {
   message.textContent = funnyMessages[count % funnyMessages.length];
   count++;
@@ -99,7 +116,7 @@ noBtn.addEventListener("mouseover", () => {
 
   noBtn.style.filter = `blur(${blurLevel}px)`;
 
-});
+});*/
 
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `

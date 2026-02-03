@@ -26,6 +26,7 @@ h1 {
   position: relative;
   height: 160px;   /* mobile-friendly */
   margin-top: 20px;
+  overflow: hidden
 }
 
 
