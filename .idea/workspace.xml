@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c831108-8d79-40df-98e3-8285959fc4da" name="Changes" comment="master: Handle code for mobile touch screen">
+    <list default="true" id="5c831108-8d79-40df-98e3-8285959fc4da" name="Changes" comment="master: funnyMessages level changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +138,31 @@
       <option name="project" value="LOCAL" />
       <updated>1770118227787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="master: Code change to handle the moment of button for with in the container">
+      <option name="closed" value="true" />
+      <created>1770118744972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770118744972</updated>
+    </task>
+    <task id="LOCAL-00009" summary="master: Message level changes done">
+      <option name="closed" value="true" />
+      <created>1770119137085</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1770119137085</updated>
+    </task>
+    <task id="LOCAL-00010" summary="master: funnyMessages level changes">
+      <option name="closed" value="true" />
+      <created>1770119465964</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1770119465964</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +173,9 @@
     <MESSAGE value="master: Updated the final code" />
     <MESSAGE value="master: Updated the blur level and random moment" />
     <MESSAGE value="master: Handle code for mobile touch screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="master: Handle code for mobile touch screen" />
+    <MESSAGE value="master: Code change to handle the moment of button for with in the container" />
+    <MESSAGE value="master: Message level changes done" />
+    <MESSAGE value="master: funnyMessages level changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="master: funnyMessages level changes" />
   </component>
 </project>

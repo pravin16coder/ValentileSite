@@ -10,7 +10,7 @@ const funnyMessages = [
   "Nice try 😏",
   "Still NO? Bold choice 😄",
   "NO is not available today 😂",
-  "Why Still NOoooo ??? 😭"
+  "Why Still NOoooo ??? 😭",
   "That button is just for decoration 🙃",
   "Even the button ships us 💕",
   "Hard to get, huh? 😌",
@@ -131,7 +131,7 @@ yesBtn.addEventListener("click", () => {
       text-align:center;
       padding:20px;
     ">
-      <h1>YAYYY 💕</h1>
+      <h1>YAYYY 💕💕</h1>
 
       <img
         src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
@@ -139,11 +139,12 @@ yesBtn.addEventListener("click", () => {
         style="width:260px; border-radius:20px; margin:20px 0;"
       />
 
-      <p style="font-size:18px; max-width:320px;">
-        Ms. Bengoli, you just made my Valentine’s Day truly special 🥰<br><br>
-        Thank you for saying YES ✨<br>
-        Mishti celebration begins 🍥💖
-      </p>
+    <p style="font-size:18px; max-width:320px;">
+      Thank you for saying YES, Ms. Bengoli 🥰<br><br>
+      Mishti celebration begins 🍥💖<br><br>
+      NO button is officially vanished now 😄
+    </p>
+
 
       <button id="backBtn"
         style="
