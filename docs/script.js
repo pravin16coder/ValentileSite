@@ -141,7 +141,7 @@ yesBtn.addEventListener("click", () => {
       />
 
       <p style="font-size:18px; max-width:320px;">
-        Mrs. Bengoli, you just made my Valentine’s Day truly special 🥰<br><br>
+        Ms. Bengoli, you just made my Valentine’s Day truly special 🥰<br><br>
         Thank you for saying YES ✨<br>
         Mishti celebration begins 🍥💖
       </p>
