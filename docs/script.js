@@ -8,21 +8,20 @@ const MAX_BLUR = 10;
 
 const funnyMessages = [
   "Nice try 😏",
-  "NO is not available today 😂",
-  "That button is just for decoration 🙃",
-  "Hard to get, huh? 😌",
   "Still NO? Bold choice 😄",
-  "Universe says try YES 💫",
+  "NO is not available today 😂",
+  "Why Still NOoooo ??? 😭"
+  "That button is just for decoration 🙃",
+  "Even the button ships us 💕",
+  "Hard to get, huh? 😌",
+  "Universe says try YES once 💫",
   "This NO button is tired 😴",
   "Okay now you’re just clicking for fun 🤭",
-  "NO.exe has stopped working 💻❌",
   "Button said ‘not today’ 😎",
-  "Even the button ships us 💕",
   "At this point, YES is easier 😆",
   "Plot twist: NO was never an option 😜",
   "Why are you running after NO? 😂",
   "This is emotional damage 😭",
-  "NO is socially distancing 🚫",
   "Button is playing hard to get 😏",
 
   // Banglish (Bengali in English)
